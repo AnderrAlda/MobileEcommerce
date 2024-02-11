@@ -1,0 +1,32 @@
+/* Input here your component styles */
+
+.wrapper {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.img {
+  width: 10rem;
+}
+
+.ShopCart {
+  color: black;
+  position: absolute;
+  top: 20%;
+  right: 2rem;
+  font-size: 1.5rem;
+}
+
+.cartCount {
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  font-size: 0.9rem;
+  background-color: grey;
+  border-radius: 0.5rem;
+  width: 1rem;
+  color: black;
+}

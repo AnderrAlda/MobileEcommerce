@@ -1,0 +1,109 @@
+.menuContentWrapper {
+  background-color: #e8e7e7;
+  margin-top: 2rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  height: 35rem;
+}
+
+.Wrapper-top {
+  overflow-x: auto; /* Add horizontal scrolling */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+}
+
+.Wrapper-top::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.horizontal-list {
+  list-style: none;
+  padding: 2rem;
+  white-space: nowrap; /* Keep list items in a single line */
+}
+
+.horizontal-list li {
+  display: inline-block;
+  margin-right: 1rem;
+  padding-right: 1rem;
+  border-radius: 1rem;
+}
+
+.selected {
+  background-color: black;
+  color: white;
+}
+
+/*MEDIUM:*/
+
+.Wrapper-Medium {
+  overflow-x: auto; /* Add horizontal scrolling */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+}
+
+.Wrapper-Medium::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.MediumProduct {
+  background-color: gray;
+  height: 12rem;
+  width: 20rem;
+  border-radius: 1rem;
+}
+
+.horizontal-list-MediumProduct {
+  list-style: none;
+  white-space: nowrap; /* Keep list items in a single line */
+}
+
+.horizontal-list-MediumProduct li {
+  display: inline-block;
+  padding-right: 1rem;
+  border-radius: 1rem;
+}
+
+/*BOTTOM:*/
+
+.Bottom-Header-Wrapper {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+  color: black;
+}
+
+.Bottom-Header-Wrapper p {
+  margin-top: 0.5rem;
+}
+
+.Wrapper-Bottom {
+  overflow-x: auto; /* Add horizontal scrolling */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+}
+
+.Wrapper-Bottom::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.BottomProduct {
+  margin-top: 1rem;
+  background-color: gray;
+  height: 10rem;
+  width: 9.5rem;
+  border-radius: 1rem;
+}
+
+.horizontal-list-BottomProduct {
+  list-style: none;
+  white-space: nowrap; /* Keep list items in a single line */
+}
+
+.horizontal-list-BottomProduct li {
+  display: inline-block;
+  padding-right: 1rem;
+  border-radius: 1rem;
+}
