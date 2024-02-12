@@ -1,0 +1,28 @@
+.headerWrapper {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.productName {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.productImage {
+  border-radius: 5rem;
+  width: 20rem;
+}
+.addCartButtonWrapper {
+  position: relative;
+}
+
+.addCartButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 3rem;
+  background-color: black;
+  color: white;
+  border-radius: 2rem;
+}
