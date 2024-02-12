@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./menuContent.css";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 const MenuContent = () => {
   const [selectedTool, setSelectedTool] = useState(0);
@@ -16,13 +17,27 @@ const MenuContent = () => {
     "Dumbbells",
   ];
 
-  const SliceSeds = [
-    "Rogue Dog Slice 1.2",
-    "Kettlebells",
-    "Dumbbells",
-    "Dumbbells",
-    "Dumbbells",
-  ];
+  const SliceSeds: { id: number; name: string; img: string; price: number }[] =
+    [
+      {
+        id: 0,
+        name: "Rogue Dog Slice 1.2",
+        img: "src/assets/RogueAlpacaSled.png",
+        price: 312,
+      },
+      {
+        id: 1,
+        name: "Kettlebells",
+        img: "src/assets/RogueEchoDogSled.png",
+        price: 122,
+      },
+      {
+        id: 2,
+        name: "Dumbbells",
+        img: "src/assets/RogueSliceSled.png",
+        price: 233,
+      },
+    ];
 
   return (
     <>
@@ -32,7 +47,7 @@ const MenuContent = () => {
             {tools.map((tool, index) => (
               <li
                 key={index}
-                className={selectedTool === index ? "selected" : ""}
+                className={selectedTool === index ? "selected" : "notSelected"}
                 onClick={() => handleClick(index)}
               >
                 {tool}
@@ -45,7 +60,16 @@ const MenuContent = () => {
           <ul className="horizontal-list-MediumProduct">
             {SliceSeds.map((tool, index) => (
               <li key={index}>
-                <div className="MediumProduct">{tool}</div>
+                <div className="MediumProduct">
+                  <div className="MediumProductText">
+                    <p>{tool.name}</p>
+                    <div className="MediumProductTextShop">
+                      <a>Shop now</a>
+                      <IoIosArrowRoundForward className="arrow" />
+                    </div>
+                  </div>
+                  <img src={tool.img} alt={tool.name} />
+                </div>
               </li>
             ))}
           </ul>
@@ -58,7 +82,11 @@ const MenuContent = () => {
           <ul className="horizontal-list-BottomProduct">
             {SliceSeds.map((tool, index) => (
               <li key={index}>
-                <div className="BottomProduct">{tool}</div>
+                <div className="BottomProduct">
+                  <img src={tool.img} alt={tool.name} />
+                  <p>{tool.name}</p>
+                  <p>USD{tool.price}</p>
+                </div>
               </li>
             ))}
           </ul>

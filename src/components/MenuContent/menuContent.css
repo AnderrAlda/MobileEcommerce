@@ -26,12 +26,18 @@
   display: inline-block;
   margin-right: 1rem;
   padding-right: 1rem;
+  padding-left: 1rem;
   border-radius: 1rem;
 }
 
 .selected {
   background-color: black;
   color: white;
+}
+
+.notSelected {
+  background-color: white;
+  color: black;
 }
 
 /*MEDIUM:*/
@@ -47,10 +53,52 @@
 }
 
 .MediumProduct {
-  background-color: gray;
+  background-color: white;
   height: 12rem;
   width: 20rem;
   border-radius: 1rem;
+  padding: 0.4rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MediumProduct img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.MediumProductText {
+  color: black;
+  font-size: 1.2rem;
+  width: 50%;
+}
+
+.MediumProductText p {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.MediumProductTextShop {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.MediumProductText a {
+  color: black;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.arrow {
+  font-size: 1.8rem;
 }
 
 .horizontal-list-MediumProduct {
@@ -91,12 +139,25 @@
 
 .BottomProduct {
   margin-top: 1rem;
-  background-color: gray;
-  height: 10rem;
+  background-color: white;
+  height: 12rem;
   width: 9.5rem;
   border-radius: 1rem;
+  padding: 0.4rem;
 }
 
+.BottomProduct img {
+  width: 10rem;
+  height: 8rem;
+  border-radius: 1rem;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.BottomProduct p {
+  color: black;
+  font-size: 0.9rem;
+}
 .horizontal-list-BottomProduct {
   list-style: none;
   white-space: nowrap; /* Keep list items in a single line */
