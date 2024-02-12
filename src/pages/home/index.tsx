@@ -3,6 +3,7 @@ import LogoHeader from "../../components/LogoHeader";
 import MenuContent from "../../components/MenuContent";
 import SearchBar from "../../components/SearchBar";
 import "./home.css";
+
 const Home = () => {
   const [cartItems, setCartItems] = useState(5);
   return (

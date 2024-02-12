@@ -1,0 +1,123 @@
+.Wrapper {
+  margin-top: 1rem;
+  overflow-y: auto; /* Add vertical scrolling */
+  max-height: 40rem; /* Set a maximum height to enable scrolling */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+}
+
+.Wrapper::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.Product {
+  margin-top: 1rem;
+  background-color: white;
+  height: 12rem;
+  width: 22rem;
+  border-radius: 1rem;
+  padding: 0.4rem;
+  display: flex;
+  gap: 1rem;
+  margin-left: 1.1rem;
+}
+
+.ProductText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.ProductText p {
+  color: black;
+}
+
+.money {
+  font-weight: bold;
+}
+
+.ProductControl {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.ProductControlQuantity {
+  font-size: 1.5rem;
+}
+
+.trash {
+  margin-left: 1rem;
+}
+
+.Product img {
+  width: 9rem;
+  height: 10rem;
+  border-radius: 1rem;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.vertical-list-Product {
+  list-style: none;
+  white-space: normal; /* Change to normal to allow line breaks */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.vertical-list-Product li {
+  padding-bottom: 1rem; /* Add padding to separate list items vertically */
+  border-radius: 1rem;
+}
+
+.WrapperProceed {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.WrapperProceedHeader {
+  position: relative;
+  height: 1rem;
+  margin-bottom: 1rem;
+}
+
+.totalItems {
+  position: absolute;
+  color: grey;
+  left: 2.5rem;
+}
+
+.totalPrice {
+  position: absolute;
+  color: black;
+  font-weight: bold;
+  right: 3rem;
+}
+
+.proceedButtom {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  border-radius: 4rem;
+  width: 20rem;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  text-align: left;
+  position: relative;
+}
+
+.arrowForward {
+  color: white;
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  font-size: 1rem;
+}
