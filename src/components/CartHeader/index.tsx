@@ -1,25 +1,27 @@
 /** At the top we will have all required imports */
 import { IoIosArrowBack } from "react-icons/io";
-import "./header.css";
-import { PiShoppingCartSimpleFill } from "react-icons/pi";
+import "./cartHeader.css";
 import { Link } from "react-router-dom"; // Import Link from React Router
+import { FaTrashAlt } from "react-icons/fa";
 
-interface LogoHeaderProps {
+interface HeaderProps {
   itemCount: number;
 }
 
-const Header: React.FC<LogoHeaderProps> = ({ itemCount }) => {
+const CartHeader: React.FC<HeaderProps> = ({ itemCount }) => {
   return (
-    <div className="wrapperHeader">
+    <div className="wrapper">
       <Link to="/" className="cartContainer">
         <IoIosArrowBack className="arrowBack" />{" "}
       </Link>
+
+      <h3>Shopping Cart</h3>
+      {/* Wrap PiShoppingCartSimpleFill inside Link */}
       <Link to="/cart" className="cartContainer">
-        <PiShoppingCartSimpleFill className="ShopCart" />
-        {itemCount > 0 && <div className="cartCount">{itemCount}</div>}
+        <FaTrashAlt className="ShopCart" />
       </Link>
     </div>
   );
 };
 
-export default Header;
+export default CartHeader;

@@ -1,6 +1,9 @@
 .headerWrapper {
-  margin-top: 1rem;
   padding: 1rem;
+}
+
+.headerWrapper p {
+  color: black;
 }
 
 .productName {
@@ -8,21 +11,184 @@
   font-weight: bold;
 }
 
-.productImage {
-  border-radius: 5rem;
-  width: 20rem;
-}
-.addCartButtonWrapper {
-  position: relative;
-}
-
 .addCartButton {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 3rem;
+  margin-left: 7rem;
+  margin-top: 2rem;
   background-color: black;
   color: white;
   border-radius: 2rem;
+  width: 10rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/*PRODUCT CATEGORES*/
+
+.Categories-list {
+  list-style: none;
+  padding: 2rem;
+  white-space: nowrap; /* Keep list items in a single line */
+}
+
+.Categories-list li {
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-radius: 1rem;
+}
+
+.selected {
+  background-color: black;
+  color: white;
+}
+
+.notSelected {
+  background-color: white;
+  color: black;
+}
+/*PRODUCT IMAGES*/
+.productImage {
+  border-radius: 0.5rem;
+  width: 20rem;
+  width: 18rem;
+  height: 20rem;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.sectionsWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+
+  margin-bottom: 2rem;
+}
+
+.Wrapper-Img {
+  overflow-x: auto; /* Add horizontal scrolling */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+}
+
+.Wrapper-Img::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.horizontal-list-Img {
+  list-style: none;
+  white-space: nowrap; /* Keep list items in a single line */
+}
+
+.horizontal-list-Img li {
+  display: inline-block;
+}
+
+/*REVIEWS*/
+
+.Wrapper-Review {
+  overflow-y: auto; /* Add horizontal scrolling */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+  max-height: 10rem;
+}
+
+.Wrapper-Review::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.Vertical-list-Review {
+  list-style: none;
+  white-space: nowrap; /* Keep list items in a single line */
+}
+
+.ReviewHeader {
+  margin: 1rem;
+  font-weight: bold;
+  color: black;
+}
+
+.Review {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: black;
+  position: relative;
+  height: 7rem;
+}
+
+.Review-Reviewer {
+  position: absolute;
+}
+
+.Review-Valoration {
+  position: absolute;
+  top: 2.5rem;
+}
+
+.Review-Date {
+  position: absolute;
+  right: 1rem;
+}
+
+.Review-Description {
+  position: absolute;
+  top: 5rem;
+}
+
+/*BOTTOM:*/
+
+.Bottom-Header-Wrapper {
+  margin-top: 3rem;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+  color: black;
+}
+
+.Bottom-Header-Wrapper p {
+  margin-top: 0.5rem;
+}
+
+.Wrapper-Bottom {
+  overflow-x: auto; /* Add horizontal scrolling */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+}
+
+.Wrapper-Bottom::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.BottomProduct {
+  margin-top: 1rem;
+  background-color: white;
+  height: 12rem;
+  width: 9.5rem;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+
+.BottomProduct img {
+  width: 10rem;
+  height: 8rem;
+  border-radius: 1rem;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.BottomProduct p {
+  color: black;
+  font-size: 0.9rem;
+}
+.horizontal-list-BottomProduct {
+  list-style: none;
+  white-space: nowrap; /* Keep list items in a single line */
+  margin-bottom: 3rem;
+}
+
+.horizontal-list-BottomProduct li {
+  display: inline-block;
+  padding-right: 1rem;
+  border-radius: 1rem;
 }

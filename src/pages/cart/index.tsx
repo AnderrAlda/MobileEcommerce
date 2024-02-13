@@ -1,11 +1,11 @@
-import Header from "../../components/Header";
+import CartHeader from "../../components/CartHeader";
 import ShoppingCartItem from "../../components/ShoppingCartItem";
 
 const Cart = () => {
   const cartItems = 1;
   return (
     <>
-      <Header itemCount={cartItems} />
+      <CartHeader itemCount={cartItems} />
       <ShoppingCartItem itemCount={cartItems} />
     </>
   );
