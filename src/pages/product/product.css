@@ -181,13 +181,13 @@
   color: black;
   font-size: 0.9rem;
 }
-.horizontal-list-BottomProduct {
+.horizontal-list-BottomProduct2 {
   list-style: none;
   white-space: nowrap; /* Keep list items in a single line */
   margin-bottom: 3rem;
 }
 
-.horizontal-list-BottomProduct li {
+.horizontal-list-BottomProduct2 li {
   display: inline-block;
   padding-right: 1rem;
   border-radius: 1rem;

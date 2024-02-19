@@ -1,8 +1,10 @@
 /** At the top we will have all required imports */
 import { CiSquareMinus, CiSquarePlus, CiTrash } from "react-icons/ci";
 import "./shoppingCartItem.css";
-import { FaTrashAlt } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
+import { DataContext } from "../../contexts/dataContext";
+
+import { useContext } from "react";
 
 interface LogoHeaderProps {
   itemCount: number;
@@ -42,6 +44,7 @@ const ShoppingCartItem: React.FC<LogoHeaderProps> = ({ itemCount }) => {
         price: 233,
       },
     ];
+
   return (
     <>
       <div className="Wrapper">

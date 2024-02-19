@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./product.css";
 import Header from "../../components/Header";
+import { DataContext } from "../../contexts/dataContext";
 
 const Product = () => {
   const cartItems = 1;
@@ -72,9 +73,11 @@ const Product = () => {
 
   const tools = ["Overview", "Review", "Other products"];
 
+  const { contextData, setcontextData } = useContext(DataContext);
+
   return (
     <>
-      <Header itemCount={cartItems} />
+      <Header />
       <div className="headerWrapper">
         <p className="productPrice">USD 350</p>
         <p className="productName">Rogue Echo Dog Sled</p>
@@ -109,7 +112,12 @@ const Product = () => {
       </div>
 
       <div className="addCartButtonWrapper">
-        <button className="addCartButton">Add to Cart</button>
+        <button
+          onClick={() => setcontextData(contextData + 1)}
+          className="addCartButton"
+        >
+          Add to Cart
+        </button>
       </div>
 
       <p className="ReviewHeader">Reviews ({Reviews.length})</p>
@@ -135,7 +143,7 @@ const Product = () => {
         <p>See All</p>
       </div>
       <div className="Wrapper-Bottom">
-        <ul className="horizontal-list-BottomProduct">
+        <ul className="horizontal-list-BottomProduct2">
           {SliceSeds.map((tool, index) => (
             <li key={index}>
               <div className="BottomProduct">
